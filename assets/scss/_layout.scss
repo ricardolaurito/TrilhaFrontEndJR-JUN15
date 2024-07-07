@@ -65,7 +65,7 @@ main {
 
 
     z-index: -1;
-    opacity: .2;
+    opacity: .3;
 
 }
 
@@ -94,13 +94,14 @@ main {
 
 .container__item h1 {
     text-align: left;
-    font-weight: 700;
+    font-weight: 700;    
 }
 
 .container__item p {
     margin-top: 40px;
     font-weight: 300;
     text-align: left;
+    line-height: 36px;
     color: rgba($color: $white, $alpha: .7);
     font-size: 1.25rem;
 }
@@ -135,6 +136,66 @@ main {
     &:hover {
         opacity: .8;
     }
+}   
+
+.spline {
+    height: 30vh;
+    width: 10vw;    
+}
+
+
+.about {
+    padding: 4rem 0;
+    background-color: $white;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+  
+    .container__about {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+  
+    h2 {
+      font-size: 2.5rem;
+      color: $black;
+      text-align: left;
+      margin-bottom: $gap-6;
+    }
+  
+    &-content {
+      display: flex;
+      align-items: left;
+      gap: $gap-6;      
+    }
+  
+    &-text {
+      flex: 1;
+  
+      p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: $black;
+        margin-bottom: 1rem;
+        margin-right: $gap-8;
+      }
+    }
+  
+    &-image {
+      flex: 1;
+  
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba($black, 0.1);
+      }
+    }
+  }
+
+.border {
+    border: 2px solid red;
 }
 
 // CONTATO / FOOTER
