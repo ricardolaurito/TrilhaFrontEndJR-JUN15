@@ -1,0 +1,98 @@
+@media screen and (max-width: 1310px) {
+    .menu__right {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1650px) {
+    .container {
+        max-width: 1200px;
+
+        display: flex;
+        flex-flow: column wrap-reverse;
+        justify-content: center;
+
+    }
+
+    .container__item h1 {
+        font-weight: 700;
+        font-size: $gap-5;
+        margin: 0 auto;
+
+    }
+
+    .container__item h4 {
+        font-size: $gap-3;
+        font-weight: 300;
+        margin: 0 auto;
+        color: rgba($color: #F5F7F7, $alpha: .87);
+        align-content: start;
+    }
+
+    .container__item:nth-child(1) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        margin: 0 auto;
+    }
+
+    .container__item:nth-child(2) {
+        display: flex;
+
+        align-items: center;
+
+        margin: 40px 0px;
+
+        img {
+            width: 350px;
+
+        }
+    }
+
+    .relative {
+        position: relative;
+        height: 0;
+        align-items: center;
+
+    }
+
+    .bg__hero {
+        position: absolute;
+        top: 0px;
+        left: 0;
+
+        width: 100%;
+        height: 100vh;
+        //transform: rotate(-14deg);
+
+        overflow: hidden;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        z-index: -1;
+        opacity: .2;
+
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .svg__hero {
+        transform: scale(1.2);
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .svg__hero {
+        transform: scale(1.5);
+    }
+}
+
+@media screen and (max-width: 1310px) {
+    .svg__hero {
+        transform: scale(1.8) rotate(-35deg);
+    }
+}

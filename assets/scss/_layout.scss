@@ -1,0 +1,220 @@
+@import '../scss/colors';
+@import '../scss/spacing';
+
+// MENU 
+
+.center {
+    max-width: 1710px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 14px 0;
+    text-align: center;
+    z-index: 5;
+    background: $black .5;
+    backdrop-filter: blur(8px);
+    --webkit-backdrop-filter: blur(8px);
+}
+
+header li {
+    display: inline-block;
+    margin: 0 15px;
+
+}
+
+
+.container__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+main {
+    max-width: 1710px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+}
+
+// CONTAINER HERO
+
+.bg__hero {
+    position: absolute;
+    max-width: 1600px;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+
+
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    z-index: -1;
+    opacity: .2;
+
+}
+
+.relative {
+    position: relative;
+    width: 1600px;
+
+    display: flex;
+    margin: 0 auto;
+}
+
+
+.container {
+    max-width: 1500px;
+    height: calc(100vh - 28px);
+
+    margin: 0 auto;
+
+    padding: 48px 24px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container__item h1 {
+    text-align: left;
+    font-weight: 700;
+}
+
+.container__item p {
+    margin-top: 40px;
+    font-weight: 300;
+    text-align: left;
+    color: rgba($color: $white, $alpha: .7);
+    font-size: 1.25rem;
+}
+
+.flex__center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container__item:nth-child(1) {
+    max-width: 750px;
+    flex-grow: 1;
+
+    margin: 50px 0px;
+}
+
+.container__item:nth-child(2) {
+    flex-grow: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 50px 0px;
+
+    img {
+        width: 680px;
+    }
+
+    &:hover {
+        opacity: .8;
+    }
+}
+
+// CONTATO / FOOTER
+
+footer {
+    width: 100%;
+    max-width: 100vw;
+    height: 700px;
+    margin: 0 auto;
+
+}
+
+.container__footer {
+    max-width: 1710px;
+    height: 700px;
+
+
+    display: flex;
+    flex: column wrap;
+    align-items: center;
+
+    h3 {
+        font-weight: 500;
+    }
+}
+
+.coluna1__item {
+    height: 580px;
+    flex-grow: 2;
+    padding: 40px 24px;
+}
+
+// SOCIAIS
+
+.coluna2__item {
+    height: 580px;
+    flex-grow: 1;
+    padding: 40px 0;
+    align-items: center;
+    text-align: center;
+
+
+}
+
+.linkedin__brand,
+.github__brand {
+    width: 25px;
+    fill: $white;
+    margin-right: 10px;
+    opacity: .7;
+    transition: .4s ease;
+
+    &:hover {
+        fill: $red;
+        opacity: .9;
+    }
+
+}
+
+.sociais__links {
+    display: flex;
+    flex-direction: column;
+}
+
+.social__linkedin,
+.social__github {
+    padding: 8px 16px;
+    margin-bottom: 10px;
+    margin-right: 0;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+    a h5 {
+        opacity: .7;
+
+        &:hover {
+            opacity: .9;
+
+        }
+    }
+}

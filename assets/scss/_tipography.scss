@@ -1,0 +1,106 @@
+@import 'spacing.scss';
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+    font-family: 'JetBrains Mono', monospace;
+    color: $white;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu__logo__branding {
+    padding: 7px 19px;
+    padding-left: 0;
+    font-size: 1.1875rem;
+}
+
+.link {
+    padding: 8px 2px;
+    font-size: 1.125rem;
+
+    display: inline-block;
+
+    transition: .6s ease;
+    opacity: .4;
+
+    position: relative;
+
+
+    &:active {
+        display: inline-block;
+
+        font-weight: 900;
+    }
+
+    &:hover {
+        display: inline-block;
+
+        font-weight: 900;
+    }
+
+    &::after {
+        content: '';
+        display: block;
+
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        width: 0%;
+        height: 0.125rem;
+
+        transform: translate(50% -50%);
+        transition: .5s ease;
+
+
+        background: $red;
+    }
+
+    &:hover {
+        opacity: 1;
+
+        &::after {
+            width: 100%;
+
+        }
+    }
+}
+
+h1 {
+    font-size: $gap-7;
+    line-height: 100%;
+}
+
+h2 {
+    font-size: $gap-5;
+    line-height: 110%;
+}
+
+h3 {
+    font-size: $gap-4;
+    line-height: 120%;
+}
+
+h4 {
+    font-size: $gap-3;
+    line-height: 130%;
+}
+
+h5 {
+    font-size: $gap-2;
+    line-height: 140%;
+}
+
+h6 {
+    font-size: $gap-1;
+    line-height: 150%;
+}
