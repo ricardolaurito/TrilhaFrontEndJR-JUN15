@@ -33,15 +33,6 @@ header li {
 
 }
 
-main {
-    max-width: 1710px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-
-}
-
 // CONTAINER HERO
 
 .bg__hero {
@@ -139,18 +130,19 @@ main {
 
 .spline {
     height: 30vh;
-    width: 10vw;    
+    width: 15vw;    
 }
 
 .about {
     padding: 4rem 0;
     background-color: $white;
     height: 70vh;
+    
     display: flex;
     align-items: center;
   
     .container__about {
-      max-width: 1200px;
+      max-width: 1500px;
       margin: 0 auto;
       padding: 0 1rem;
     }
